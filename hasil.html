@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Perhitungan</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hasil Perhitungan</h1>
+        <p><strong>Bangun Datar:</strong> <span th:text="${nama}"></span></p>
+        <p><strong>Luas:</strong> <span th:text="${luas}"></span></p>
+        <p><strong>Keliling:</strong> <span th:text="${keliling}"></span></p>
+        <a href="/" class="button">Kembali</a>
+    </div>
+</body>
+</html>

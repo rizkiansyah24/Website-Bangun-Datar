@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Bangun Datar</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Bangun Datar</h1>
+
+        <!-- Persegi -->
+        <form action="/hitung/persegi" method="post">
+            <h2>Persegi</h2>
+            <label for="sisi">Sisi:</label>
+            <input type="number" step="any" name="sisi" required>
+            <button type="submit">Hitung</button>
+        </form>
+
+        <!-- Persegi Panjang -->
+        <form action="/hitung/persegi-panjang" method="post">
+            <h2>Persegi Panjang</h2>
+            <label for="panjang">Panjang:</label>
+            <input type="number" step="any" name="panjang" required>
+            <label for="lebar">Lebar:</label>
+            <input type="number" step="any" name="lebar" required>
+            <button type="submit">Hitung</button>
+        </form>
+
+        <!-- Segitiga -->
+        <form action="/hitung/segitiga" method="post">
+            <h2>Segitiga</h2>
+            <label for="alas">Alas:</label>
+            <input type="number" step="any" name="alas" required>
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" step="any" name="tinggi" required>
+            <label for="sisiA">Sisi A:</label>
+            <input type="number" step="any" name="sisiA" required>
+            <label for="sisiB">Sisi B:</label>
+            <input type="number" step="any" name="sisiB" required>
+            <label for="sisiC">Sisi C:</label>
+            <input type="number" step="any" name="sisiC" required>
+            <button type="submit">Hitung</button>
+        </form>
+
+        <!-- Lingkaran -->
+        <form action="/hitung/lingkaran" method="post">
+            <h2>Lingkaran</h2>
+            <label for="jariJari">Jari-Jari:</label>
+            <input type="number" step="any" name="jariJari" required>
+            <button type="submit">Hitung</button>
+        </form>
+
+        <!-- Jajar Genjang -->
+        <form action="/hitung/jajar-genjang" method="post">
+            <h2>Jajar Genjang</h2>
+            <label for="alas">Alas:</label>
+            <input type="number" step="any" name="alas" required>
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" step="any" name="tinggi" required>
+            <label for="sisiMiring">Sisi Miring:</label>
+            <input type="number" step="any" name="sisiMiring" required>
+            <button type="submit">Hitung</button>
+        </form>
+    </div>
+</body>
+</html>
